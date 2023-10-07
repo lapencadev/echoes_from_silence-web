@@ -8,11 +8,13 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
+import { TeamComponent } from './pages/team/team.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    TeamComponent
   ],
   imports: [
     BrowserModule,
