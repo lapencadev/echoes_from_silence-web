@@ -9,6 +9,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { TeamComponent } from './pages/team/team.component';
+import { FlipCardModule } from './pages/team/flip-card/flip-card.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { TeamComponent } from './pages/team/team.component';
     MatToolbarModule,
     MatIconModule,
     BrowserAnimationsModule,
-    RouterModule
+    RouterModule,
+    FlipCardModule
   ],
   exports: [
     MatToolbarModule,
