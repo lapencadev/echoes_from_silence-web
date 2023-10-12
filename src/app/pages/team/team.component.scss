@@ -1,9 +1,20 @@
 app-home {
-    z-index: 1; /* Un valor menor que otros elementos */
+    z-index: -1; /* Un valor menor que otros elementos */
   }
 
-  :host {
+  .row {
     display: flex;
+    justify-content: center;
+    margin-top: 200px;
+  }
+  
+  .flip-card {
+    width: 300px; /* Establece un ancho fijo para las tarjetas */
+  }
+  
+  
+  :host {
+    //display: flex; // este display impide el display de las filas
     place-items: center;
     justify-content: center;
     height: 100vh;
@@ -12,18 +23,96 @@ app-home {
 
   /* Estilos para la imagen dentro de la tarjeta */
 .diego-front img {
-  width: 75%; /* Ajusta el ancho al 100% de su contenedor */
-  height: 75%; /* Ajusta la altura al 100% de su contenedor */
+  width: 100%; /* Ajusta el ancho al 100% de su contenedor */
+  height: 100%; /* Ajusta la altura al 100% de su contenedor */
   display: grid;
   justify-content: center;
   align-items: center;
-  margin: 30px;
-  padding: 15px;
+  // margin: 30px;
+  // padding: 15px;
 }
-
-  
+ 
   .diego-back{
     background-color: black;
+   // opacity: 1;
+   ;
   }
 
+  .diego-back img{
+    display: none;
+  }
+
+  .carlos-front img {
+    width: 100%; /* Ajusta el ancho al 100% de su contenedor */
+    height: 100%; /* Ajusta la altura al 100% de su contenedor */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    // margin: 30px;
+    // padding: 15px;
+  }
   
+    .carlos-back{
+      background-color: black;
+      opacity: 1;
+    }
+
+    .dani-front img {
+      width: 100%; /* Ajusta el ancho al 100% de su contenedor */
+      height: 100%; /* Ajusta la altura al 100% de su contenedor */
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      // margin: 30px;
+      // padding: 15px;
+    }
+    
+      .dani-back{
+        background-color: black;
+        opacity: 1;
+      }
+
+      .maria-front img {
+        width: 100%; /* Ajusta el ancho al 100% de su contenedor */
+        height: 100%; /* Ajusta la altura al 100% de su contenedor */
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        // margin: 30px;
+        // padding: 15px;
+      }
+      
+        .maria-back{
+          background-color: black;
+          opacity: 1;
+        }
+
+        .raquel-front img {
+          width: 100%; /* Ajusta el ancho al 100% de su contenedor */
+          height: 100%; /* Ajusta la altura al 100% de su contenedor */
+          display: grid;
+          justify-content: center;
+          align-items: center;
+          // margin: 30px;
+          // padding: 15px;
+        }
+        
+          .raquel-back{
+            background-color: black;
+            opacity: 1;
+          }
+
+          .vanesa-front img {
+            width: 100%; /* Ajusta el ancho al 100% de su contenedor */
+            height: 100%; /* Ajusta la altura al 100% de su contenedor */
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            // margin: 30px;
+            // padding: 15px;
+          }
+          
+            .vanesa-back{
+              background-color: black;
+              opacity: 1;
+            }

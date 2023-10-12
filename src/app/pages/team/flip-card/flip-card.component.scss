@@ -32,23 +32,24 @@
   
   .back {
     transform: rotateY(180deg);
+    background-color: black;
   }
   
   .flipped {
     transform: rotateY(180deg);
   }
   
-  .arrow-icon {
-    position: absolute;
-    right: 5px;
-    bottom: 5px;
-    opacity: 1;
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    border: 1px solid #fff;
-  }
+  // .arrow-icon {
+  //   position: absolute;
+  //   right: 5px;
+  //   bottom: 5px;
+  //   opacity: 1;
+  //   width: 25px;
+  //   height: 25px;
+  //   cursor: pointer;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   border-radius: 50%;
+  //   border: 1px solid #fff;
+  // }
