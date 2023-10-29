@@ -9,7 +9,23 @@ app-home {
   }
   
   .flip-card {
-    width: 300px; /* Establece un ancho fijo para las tarjetas */
+    width: 100%; /* Utiliza el ancho completo del contenedor padre */
+    max-width: 300px; /* Establece un ancho máximo para las tarjetas */
+    margin: 10px; /* Espacio entre las tarjetas */
+    text-align: center; /* Centra el contenido */
+  }
+  
+  .flip-card img {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+  }
+  
+  .flip-card-back {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: small;
   }
   
   
@@ -34,12 +50,12 @@ app-home {
  
   .diego-back{
     background-color: black;
-   // opacity: 1;
-   ;
+    text-align: justify;
+    font-size: small;   
   }
 
   .diego-back img{
-    display: none;
+    //display: none;
   }
 
   .carlos-front img {
