@@ -1,5 +1,7 @@
 # EchoesFromSilenceWeb
 
+Esta web nace de la necesidad de mi grupo de música y de mi curiosidad como desarrollador. Después de un año en el mundillo tech, necesito seguir practicando y explorando sobre las tecnologías con las que trabajo, por lo que está web es desarrollada en su totalidad con Angular.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.6.
 
 ## Development server
