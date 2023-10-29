@@ -26,6 +26,7 @@ app-home {
   .logo-bar{
     padding-top: 70px;
     filter: invert(100%);
+    min-width: 100px;
   }
   
   .toolbar img {
@@ -54,8 +55,9 @@ app-home {
     margin: 0 0.65em !important;
     min-width: 3em;
     line-height: 36.4px;
-    font-size: medium;
+    // font-size: ;
     border-radius: 10px 10px;
+    width: auto;
   }
 
   .button-bar:hover{

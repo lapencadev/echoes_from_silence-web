@@ -1,33 +1,36 @@
 .container {
-    width: 300px;
+    max-width: 300px;
     height: 180px;
-    display: flexbox;
-    // position: relative;
-    // perspective: 800px;
-    border-radius: 4px;
-  }
+    //position: absolute;
+    perspective: 800px;
+
+}
   
   .card {
-    width: auto;
-    height: auto;
+    // width: 100%;
+    // height: 100%;
     // position: absolute;
+    // display: flexbox;
+    // flex-wrap: wrap;
     transform-style: preserve-3d;
     transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     border-radius: 6px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-    box-sizing: border-box;
+    // box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    // box-sizing: border-box;
   }
   
   .card .front,
   .card .back {
-    position: absolute;
-    width: auto;
-    height: auto;
+    // position: absolute;
+    // width: auto;
+    // height: auto;
+    // display: flexbox;
+    // flex-wrap: wrap;
     backface-visibility: hidden;
     border-radius: 6px;
     color: #fff;
-    display: grid;
-    place-items: center;
+    // display: flex;
+    // place-items: center;
   }
   
   .back {
@@ -39,17 +42,3 @@
     transform: rotateY(180deg);
   }
   
-  // .arrow-icon {
-  //   position: absolute;
-  //   right: 5px;
-  //   bottom: 5px;
-  //   opacity: 1;
-  //   width: 25px;
-  //   height: 25px;
-  //   cursor: pointer;
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   border-radius: 50%;
-  //   border: 1px solid #fff;
-  // }
