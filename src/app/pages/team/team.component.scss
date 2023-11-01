@@ -1,29 +1,24 @@
-app-home {
-    z-index: -1; /* Un valor menor que otros elementos */
-  }
-
   .row {
     display: flex;
     justify-content: center;
-    margin-top: 200px;
-    align-items: center;
+     margin-top: 50px;
+    // align-items: center;
+    
   }
   
   .flip-card {
     width: 100%; /* Utiliza el ancho completo del contenedor padre */
-    max-width: 300px; /* Establece un ancho máximo para las tarjetas */
+    // max-width: 300px; /* Establece un ancho máximo para las tarjetas */
+    margin: 20px;
   }
   
-  // .flip-card img {
-  //   width: 100%; /* Ajusta el ancho al 100% del contenedor */
-  //   height: auto; /* Altura automática para mantener la proporción */
-  // }
+  
   
   // .flip-card-back {
   //   background-color: black;
   //   color: white;
-  //   text-align: center;
-  //   padding: 10px;
+  //   //text-align: center;
+  //   // padding: 10px;
   //   font-size: small;
   // }
   
@@ -31,77 +26,78 @@ app-home {
   /* Estilos para la imagen dentro de la tarjeta */
 .diego-front img {
   width: 100%;
-  display: flex;
-  // margin: 30px;
-  // padding: 15px;
 }
  
   .diego-back{
     background-color: black;
     text-align: justify;
-    font-size: small;  
-  }
+    font-size: xx-small;  
+    opacity:0.7;  
+    position: absolute;
 
-  .diego-back img{
-    //display: none;
   }
 
   .carlos-front img {
     width: 100%;
-   display: flex;
-    // margin: 30px;
-    // padding: 15px;
   }
   
-    .carlos-back{
-      background-color: black;
-      opacity: 1;
-    }
-
-    .dani-front img {
-      width: 100%;
-      display: flex;
-      // margin: 30px;
-      // padding: 15px;
-    }
+  .carlos-back{
+    background-color: black;
+    text-align: justify;
+    font-size: xx-small;  
+    opacity:0.7;  
+    position: absolute;
     
-      .dani-back{
-        background-color: black;
-        opacity: 1;
-      }
+  }
 
-      .maria-front img {
-        width: 100%;
-        display:flex;
-        // margin: 30px;
-        // padding: 15px;
-      }
+  .dani-front img {
+    width: 100%;
+  }
+    
+  .dani-back{
+    background-color: black;
+    text-align: justify;
+    font-size: xx-small;  
+    opacity:0.7;  
+    position: absolute;
+
+  }
+
+  .maria-front img {
+    width: 100%;
+  }
       
-        .maria-back{
-          background-color: black;
-          opacity: 1;
-        }
+  .maria-back{
+    background-color: black;
+    text-align: justify;
+    font-size: xx-small;  
+    opacity:0.7;  
+    position: absolute;
 
-        .raquel-front img {
-          width: 100%;
-          display: flex;
-          // margin: 30px;
-          // padding: 15px;
-        }
+  }
+
+  .raquel-front img {
+    width: 100%;
+  }
         
-          .raquel-back{
-            background-color: black;
-            opacity: 1;
-          }
+  .raquel-back{
+    background-color: black;
+    text-align: justify;
+    font-size: xx-small;  
+    opacity:0.7;  
+    position: absolute;
 
-          .vanesa-front img {
-            width: 100%;
-            display: flex;
-            // margin: 30px;
-            // padding: 15px;
-          }
+  }
+
+  .vanesa-front img {
+    width: 100%;   
+  }
           
-            .vanesa-back{
-              background-color: black;
-              opacity: 1;
-            }
+  .vanesa-back{
+    background-color: black;
+    text-align: justify;
+    font-size: xx-small;  
+    opacity:0.7; 
+    position: absolute;
+ 
+  }

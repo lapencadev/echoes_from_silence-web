@@ -1,44 +1,40 @@
 .container {
-    max-width: 300px;
-    height: 180px;
-    //position: absolute;
+    // max-width: 300px;
+    // height: auto;
     perspective: 800px;
-
 }
   
   .card {
-    // width: 100%;
-    // height: 100%;
-    // position: absolute;
-    // display: flexbox;
-    // flex-wrap: wrap;
     transform-style: preserve-3d;
     transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     border-radius: 6px;
-    // box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-    // box-sizing: border-box;
+    max-width: auto;
+
   }
   
   .card .front,
-  .card .back {
-    // position: absolute;
-    // width: auto;
-    // height: auto;
-    // display: flexbox;
-    // flex-wrap: wrap;
+  .card .back {  
     backface-visibility: hidden;
-    border-radius: 6px;
-    color: #fff;
-    // display: flex;
-    // place-items: center;
+  border-radius: 6px;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  place-items: center;
   }
   
   .back {
     transform: rotateY(180deg);
     background-color: black;
+    display: flex; // Añade esto para centrar el contenido
+    // flex-direction: column; // Añade esto para colocar el contenido en una columna
+    // justify-content: center; // Añade esto para centrar verticalmente
+    // align-items: center; // Añade esto para centrar horizontalmente
+    // text-align: center; // Añade esto para centrar el texto
   }
   
   .flipped {
     transform: rotateY(180deg);
-  }
+    }
   
+   
