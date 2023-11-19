@@ -10,12 +10,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { TeamComponent } from './pages/team/team.component';
 import { FlipCardModule } from './pages/team/flip-card/flip-card.module';
+import { MusicComponent } from './pages/music/music.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    TeamComponent
+    TeamComponent,
+    MusicComponent
   ],
   imports: [
     BrowserModule,

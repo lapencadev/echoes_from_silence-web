@@ -3,6 +3,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { TeamComponent } from './pages/team/team.component';
 import { AppComponent } from './app.component';
+import { MusicComponent } from './pages/music/music.component';
 
 const routes: Routes = [
 
@@ -10,7 +11,10 @@ const routes: Routes = [
       path: 'conocenos',
       component: TeamComponent
     },
-  
+  {
+    path: 'musica',
+    component: MusicComponent
+  },
   
 ];
 
