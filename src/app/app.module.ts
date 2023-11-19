@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { YouTubePlayerModule } from "@angular/youtube-player";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -26,7 +26,8 @@ import { MusicComponent } from './pages/music/music.component';
     MatIconModule,
     BrowserAnimationsModule,
     RouterModule,
-    FlipCardModule
+    FlipCardModule,
+    YouTubePlayerModule,
   ],
   exports: [
     MatToolbarModule,
