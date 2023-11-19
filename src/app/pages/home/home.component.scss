@@ -16,6 +16,7 @@
     display: flex;
     justify-content: flex-end;
     margin-right: 20px;
+    margin-top: 10px;
   }
   .logo-bar{
     filter: invert(100%);
@@ -43,14 +44,15 @@
     z-index: 1020; 
   }
 
-  .button-bar{
+  .button-bar {
+    margin-right: 10px; /* Espaciado lateral */
+    margin-top: 10px; /* Espaciado superior */
     padding: 0 1.15em;
-    margin: 0 0.65em !important;
     line-height: 36.4px;
-    border-radius: 10px 10px;
+    border-radius: 10px;
     width: auto;
   }
-
+  
   .button-bar:hover{
     background-color: #130f7fd4;
     color: #ffffff;
