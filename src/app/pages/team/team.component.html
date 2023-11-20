@@ -1,3 +1,7 @@
+<div *ngIf="loading" class="loading-container">
+  <img src="./assets/rayo.gif" alt="Cargando...">
+</div>
+<ng-container *ngIf="!loading">
 <div class="row">
   <flip-card>
     <flip-card-front>
@@ -76,4 +80,4 @@ asfd</h2>
     </flip-card-back>
   </flip-card>
 </div>
-
+</ng-container>
