@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'flip-card',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FlipCardComponent implements OnInit {
   toggleProperty = false;
+  @Input() isFlipped: boolean = false;
 
   constructor() { }
 

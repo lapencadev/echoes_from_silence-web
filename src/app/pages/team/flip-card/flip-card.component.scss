@@ -1,41 +1,52 @@
-.container {
-    // max-width: 300px;
-    // height: auto;
-    perspective: 800px;
+/* flip-card.components.scss */
+.container{
+  perspective: 800px;
 }
-  
-  .card {
-    transform-style: preserve-3d;
-    transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    border-radius: 6px;
-    max-width: auto;
+.card {
+   position: relative;
+  // transform-style: preserve-3d;
+  // -webkit-transform-style: preserve-3d;
+  //   -webkit-transition: 3s ease;
+  //   -moz-transform-style: preserve-3d;
+  //   -moz-transition: 3s ease;
+  // transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  // border-radius: 6px;
+  // max-width: auto;
+ 
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  padding: 0px;
+  backface-visibility: hidden;
+}
 
-  }
-  
-  .card .front,
-  .card .back {  
-    backface-visibility: hidden;
-  border-radius: 6px;
-  color: #fff;
-  width: 100%;
+.card .front,
+.card .back {  
+  box-sizing: border-box;
+  border-radius: 12px;
+  position: relative;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  font-size: medium;
-  }
-  
-  .back {
-    transform: rotateY(180deg);
-    background-color: black;
-    display: flex; // Añade esto para centrar el contenido
-    // flex-direction: column; // Añade esto para colocar el contenido en una columna
-    // justify-content: center; // Añade esto para centrar verticalmente
-    // align-items: center; // Añade esto para centrar horizontalmente
-    // text-align: center; // Añade esto para centrar el texto
-  }
-  
-  .flipped {
-    transform: rotateY(180deg);
-    }
-  
-   
+  width: 100%;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+}
+
+.card .back {
+  position: absolute;
+  height: 100%;
+  color: white;
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
+
+.front img, .back img {
+  width: 100%; /* Ajusta el ancho de la imagen */
+  height: 100%; /* Ajusta la altura de la imagen */
+  // object-fit: cover; /* Ajusta la imagen para cubrir completamente su contenedor */
+}
+
+.flipped {
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
+

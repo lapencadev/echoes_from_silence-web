@@ -11,13 +11,13 @@ import { RouterModule } from '@angular/router';
 import { TeamComponent } from './pages/team/team.component';
 import { FlipCardModule } from './pages/team/flip-card/flip-card.module';
 import { MusicComponent } from './pages/music/music.component';
-
+import { MatDialogModule } from '@angular/material/dialog';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     TeamComponent,
-    MusicComponent
+    MusicComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,6 +28,8 @@ import { MusicComponent } from './pages/music/music.component';
     RouterModule,
     FlipCardModule,
     YouTubePlayerModule,
+    MatDialogModule
+    
   ],
   exports: [
     MatToolbarModule,

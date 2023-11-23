@@ -11,31 +11,63 @@
     // max-width: 300px; /* Establece un ancho máximo para las tarjetas */
     margin: 20px;
   }
-  
+
+  p{
+    position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  max-width: 80vw; /* ajusta según tus necesidades */
+  margin: auto; /* centra horizontalmente */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateY(360deg);
+    
+  }
+
+  @media (max-width: 768px) {
+    p {
+      font-size: 14px; /* Ajusta el tamaño del texto para dispositivos móviles */
+    }
+  }
+  button {
+    position: absolute;
+    width: 50%;
+    height: 10%;
+    z-index: 1; 
+
+  }
+
+  .button-bar:hover{
+    background-color: #130f7fd4;
+    color: #ffffff;
+}
+
+  .boton{
+    display: flex;
+    justify-content: center;
+    z-index: 1; 
+
+  }
 
   
-  // .flip-card-back {
-  //   background-color: black;
-  //   color: white;
-  //   //text-align: center;
-  //   // padding: 10px;
-  //   font-size: small;
-  // }
-  
 
-  /* Estilos para la imagen dentro de la tarjeta */
 .diego-front img {
   width: 100%;
 }
- 
-  .diego-back{
-    background-color: black;
-    text-align: justify;
-    font-size: xx-small;  
-    opacity:0.7;  
-    position: absolute;
+.diego-back img {
+  width: 100%;
+  transform: rotatey(180deg);
+  opacity:0.5;  
+  z-index: -1;
+  pointer-events: none;
+}
 
-  }
+.diego-back,
+.diego-front {
+  backface-visibility: hidden;
+}
+
 
   .carlos-front img {
     width: 100%;
@@ -66,15 +98,6 @@
   .maria-front img {
     width: 100%;
   }
-      
-  // .maria-back{
-  //   background-color: black;
-  //   text-align: justify;
-  //   font-size: xx-small;  
-  //   opacity:0.7;  
-  //   position: absolute;
-
-  // }
 
   .raquel-front img {
     width: 100%;

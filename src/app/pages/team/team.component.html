@@ -3,20 +3,23 @@
 </div>
 <ng-container *ngIf="!loading">
 <div class="row">
-  <flip-card>
+  <flip-card  [isFlipped]="isFlipped" (click)="toggleFlip(); abrirModal();">
     <flip-card-front>
       <div class="front diego-front">
         <img src="./assets/diego.jpg" alt="Diego"> 
       </div>
+
     </flip-card-front>
-    <flip-card-back class="back diego-back">
-      <h2>Diego
-         / Yisus es el encargado de desatar el rugido de los tambores.
-        Empezó hace 14 años golpeando cacerolas de manera autodidacta, hasta poder estrenar una batería de verdad con su primer grupo de rock and roll (Ladrillo), mientras pasaba el tiempo fue enlazando proyectos diferentes abarcando rock (Q11), Ska-Punk(Sistema Kadaver) o géneros sin identificar (The Trumpeters).
-        Pasado el tiempo y tras una junta apocalíptica, emergió la idea de este proyecto y ya no había marcha atrás... ¡¡Preparad vuestros tímpanos!! "TUCUPÁ TUCUPÁ"
-        Entre sus influencias destacan: Slipknot, System of a Down, Los de Marras, Eskimo Callboy, Skindred, Narco, Extremoduro, O'Funkillo, Iratxo, Koma, Korpiklaani... 
-      </h2>
+    <flip-card-back>
+      <p *ngIf="isFlipped">Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego </p>
+      <!-- <div class="boton">
+        <button class="button-bar" (click)="abrirModal();" *ngIf="isFlipped">Diego</button>
+      </div> -->
+      <div class="back diego-back">
+        <img src="./assets/diego.jpg" alt="Diego"> 
+      </div>
     </flip-card-back>
+
   </flip-card>
   <flip-card>
     <flip-card-front>
@@ -57,8 +60,9 @@
         <img src="./assets/raquel.jpg" alt="raquel">
       </div>
     </flip-card-front>
-    <flip-card-back class="raquel-back">
+    <flip-card-back class=" back raquel-back">
       <h2>Raquel</h2>
+      <!-- <button (click)="abrirModal()">Click</button> -->
     </flip-card-back>
   </flip-card>
   <flip-card>
