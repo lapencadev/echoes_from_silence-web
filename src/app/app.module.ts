@@ -5,19 +5,24 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import {MatButtonModule} from '@angular/material/button'; 
+import {MatListModule} from '@angular/material/list';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { TeamComponent } from './pages/team/team.component';
 import { FlipCardModule } from './pages/team/flip-card/flip-card.module';
 import { MusicComponent } from './pages/music/music.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatDialogModule } from '@angular/material/dialog';
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     TeamComponent,
-    MusicComponent,
+    MusicComponent
   ],
   imports: [
     BrowserModule,
@@ -28,8 +33,11 @@ import { MatDialogModule } from '@angular/material/dialog';
     RouterModule,
     FlipCardModule,
     YouTubePlayerModule,
+    MatSidenavModule,
+    MatListModule,
+    MatButtonModule,
+    FlexLayoutModule,
     MatDialogModule
-    
   ],
   exports: [
     MatToolbarModule,
