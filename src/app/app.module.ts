@@ -22,7 +22,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     AppComponent,
     HomeComponent,
     TeamComponent,
-    MusicComponent
+    MusicComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,7 +37,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatListModule,
     MatButtonModule,
     FlexLayoutModule,
-    MatDialogModule
+    MatDialogModule,
+    AppRoutingModule,
   ],
   exports: [
     MatToolbarModule,
