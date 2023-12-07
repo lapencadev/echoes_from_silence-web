@@ -12,13 +12,21 @@ const routes: Routes = [
     },
     {
       path: 'musica',
-      component: MusicComponent,
-      // children: [
-      //   {
-      //     path: 'letras',
-      //     component: LyricsComponent
-      //   },
-      // ]
+        data: {
+          breadcrumb: {
+            label: 'Nuestra música',
+          },
+        },
+        children: [
+          {
+            path: '',
+            component: MusicComponent,
+          },
+          {
+            path: 'letras',
+            component: LyricsComponent,
+          },
+        ],
     },
   {
     path: '',

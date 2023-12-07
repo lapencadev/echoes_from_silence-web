@@ -1,4 +1,6 @@
 import {AfterViewInit, ChangeDetectorRef, Component, ElementRef, OnDestroy, OnInit, ViewChild} from '@angular/core';
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-music',
   templateUrl: './music.component.html',
@@ -8,7 +10,8 @@ export class MusicComponent implements AfterViewInit, OnDestroy {
   @ViewChild('demoYouTubePlayer') demoYouTubePlayerRef: ElementRef<HTMLDivElement> | undefined;  videoWidth: number | undefined;
   videoHeight: number | undefined;
 
-  constructor(private _changeDetectorRef: ChangeDetectorRef) { }
+  constructor(private _changeDetectorRef: ChangeDetectorRef,
+              private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -34,4 +37,9 @@ export class MusicComponent implements AfterViewInit, OnDestroy {
   ngOnDestroy(): void {
     window.removeEventListener('resize', this.onResize);
   }
+
+  navigateToLyrics(): void {
+    this.router.navigate(['musica/letras']);
+  }
+  
 }
