@@ -1,0 +1,30 @@
+.letra{
+    display: flex;
+    text-align: justify;
+    justify-content: center;
+  }
+
+  .portada{
+    display: flex;
+    justify-content: center;
+    img{
+      max-width: 200px;
+      margin: 10px;
+    }
+}
+
+.botonera {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 6px;
+    flex-direction: row;
+ }
+
+ .boton110 {
+    min-width: 110px;
+    margin: 20px;
+    min-height: 30px;
+    font-size: 14px;
+ }

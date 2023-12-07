@@ -16,7 +16,6 @@ export class MusicComponent implements AfterViewInit, OnDestroy {
   ngOnInit(): void {
   }
   ngAfterViewInit(): void {
-    // Verificar que demoYouTubePlayerRef esté definido
     if (this.demoYouTubePlayerRef) {
       // Inicializar demoYouTubePlayer cuando esté disponible
       this.onResize();
@@ -25,7 +24,6 @@ export class MusicComponent implements AfterViewInit, OnDestroy {
   }
 
   onResize = (): void => {
-    // Verificar que demoYouTubePlayerRef y demoYouTubePlayer estén definidos
     if (this.demoYouTubePlayerRef && this.demoYouTubePlayerRef.nativeElement) {
       // Automatically expand the video to fit the page up to 1200px x 720px
       this.videoWidth = Math.min(this.demoYouTubePlayerRef.nativeElement.clientWidth, 550);
@@ -38,8 +36,5 @@ export class MusicComponent implements AfterViewInit, OnDestroy {
     window.removeEventListener('resize', this.onResize);
   }
 
-  navigateToLyrics(): void {
-    this.router.navigate(['musica/letras']);
-  }
   
 }
