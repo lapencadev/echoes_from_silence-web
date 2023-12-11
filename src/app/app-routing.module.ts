@@ -4,8 +4,13 @@ import { TeamComponent } from './pages/team/team.component';
 import { MusicComponent } from './pages/music/music.component';
 import { LandingComponent } from './pages/landing/landing.component';
 import { LyricsComponent } from './pages/music/lyrics/lyrics.component';
+import { ConcertsComponent } from './pages/concerts/concerts.component';
 
 const routes: Routes = [
+  {
+      path: 'conciertos',
+      component: ConcertsComponent
+    },
     {
       path: 'conocenos',
       component: TeamComponent

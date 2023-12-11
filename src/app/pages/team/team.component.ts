@@ -27,10 +27,10 @@ export class TeamComponent implements OnInit {
     }, 2000);  
   }
 
-  abrirModal() {
-    this.dialog
-      .open(ModalComponent)
-      .afterClosed()
+  // abrirModal() {
+  //   this.dialog
+  //     .open(ModalComponent)
+  //     .afterClosed()
       
-  }
+  // }
 }

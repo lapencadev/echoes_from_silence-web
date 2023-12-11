@@ -7,7 +7,7 @@
   }
   
   .flip-card {
-    width: 100%; /* Utiliza el ancho completo del contenedor padre */
+    width: 50%; /* Utiliza el ancho completo del contenedor padre */
     // max-width: 300px; /* Establece un ancho máximo para las tarjetas */
     margin: 20px;
   }
@@ -25,18 +25,18 @@
     
   }
 
-  @media (max-width: 768px) {
-    p {
-      font-size: 14px; /* Ajusta el tamaño del texto para dispositivos móviles */
-    }
-  }
-  button {
-    position: absolute;
-    width: 50%;
-    height: 10%;
-    z-index: 1; 
+  // @media (max-width: 768px) {
+  //   p {
+  //     font-size: 14px; /* Ajusta el tamaño del texto para dispositivos móviles */
+  //   }
+  // }
+  // button {
+  //   position: absolute;
+  //   width: 50%;
+  //   height: 10%;
+  //   z-index: 1; 
 
-  }
+  // }
 
   .button-bar:hover{
     background-color: #130f7fd4;
@@ -53,7 +53,7 @@
   
 
 .diego-front img {
-  width: 100%;
+  width: 50%;
 }
 .diego-back img {
   width: 100%;
@@ -70,7 +70,7 @@
 
 
   .carlos-front img {
-    width: 100%;
+    width: 50%;
   }
   
   .carlos-back{
@@ -83,7 +83,7 @@
   }
 
   .dani-front img {
-    width: 100%;
+    width: 50%;
   }
     
   .dani-back{
@@ -96,11 +96,20 @@
   }
 
   .maria-front img {
-    width: 100%;
+    width: 50%;
+  }
+
+  .maria-back{
+    background-color: black;
+    text-align: justify;
+    font-size: xx-small;  
+    opacity:0.7;  
+    position: absolute;
+
   }
 
   .raquel-front img {
-    width: 100%;
+    width: 50%;
   }
         
   .raquel-back{
@@ -110,7 +119,7 @@
   }
 
   .vanesa-front img {
-    width: 100%;   
+    width: 50%;   
   }
           
   .vanesa-back{
