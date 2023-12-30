@@ -1,145 +1,52 @@
   .row {
     display: flex;
     justify-content: center;
-     margin-top: 50px;
-    // align-items: center;
-    
-  }
-  
-  .flip-card {
-    width: 50%; /* Utiliza el ancho completo del contenedor padre */
-    // max-width: 300px; /* Establece un ancho máximo para las tarjetas */
-    margin: 20px;
+    margin-top: 50px;
+    flex-wrap: wrap;
   }
 
-  p{
+  p {
     position: absolute;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  max-width: 80vw; /* ajusta según tus necesidades */
-  margin: auto; /* centra horizontalmente */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotateY(360deg);
-    
-  }
-
-  // @media (max-width: 768px) {
-  //   p {
-  //     font-size: 14px; /* Ajusta el tamaño del texto para dispositivos móviles */
-  //   }
-  // }
-  // button {
-  //   position: absolute;
-  //   width: 50%;
-  //   height: 10%;
-  //   z-index: 1; 
-
-  // }
-
-  .button-bar:hover{
-    background-color: #130f7fd4;
-    color: #ffffff;
-}
-
-  .boton{
+    z-index: 1;
     display: flex;
     justify-content: center;
-    z-index: 1; 
+    max-width: 80vw;
+    /* ajusta según tus necesidades */
+    margin: auto;
+    /* centra horizontalmente */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateY(360deg);
 
   }
 
-  
-
-.diego-front img {
-  width: 50%;
-}
-.diego-back img {
-  width: 100%;
-  transform: rotatey(180deg);
-  opacity:0.5;  
-  z-index: -1;
-  pointer-events: none;
-}
-
-.diego-back,
-.diego-front {
-  backface-visibility: hidden;
-}
-
-
-  .carlos-front img {
-    width: 50%;
-  }
-  
-  .carlos-back{
-    background-color: black;
-    text-align: justify;
-    font-size: xx-small;  
-    opacity:0.7;  
-    position: absolute;
-    
+  h2 {
+    // display: flex;
+    // justify-content: center;
+    // position: fixed;
+    display: none;
   }
 
-  .dani-front img {
-    width: 50%;
-  }
-    
-  .dani-back{
-    background-color: black;
-    text-align: justify;
-    font-size: xx-small;  
-    opacity:0.7;  
-    position: absolute;
-
+  .foto {
+    max-width: 30%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
   }
 
-  .maria-front img {
-    width: 50%;
+  .caja{
+    display: flex;
   }
 
-  .maria-back{
-    background-color: black;
-    text-align: justify;
-    font-size: xx-small;  
-    opacity:0.7;  
-    position: absolute;
-
-  }
-
-  .raquel-front img {
-    width: 50%;
-  }
-        
-  .raquel-back{
-    margin: 10px;
-    position: absolute;
-
-  }
-
-  .vanesa-front img {
-    width: 50%;   
-  }
-          
-  .vanesa-back{
-    background-color: black;
-    text-align: justify;
-    font-size: xx-small;  
-    opacity:0.7; 
-    position: absolute;
- 
-  }
 
   .loading-container {
     display: flex;
     justify-content: center;
     align-items: center;
-     height: 20vh;  
+    height: 20vh;
   }
-  
+
   .loading-container img {
-    width: 200px;  
+    width: 200px;
     height: 200px;
   }
-  

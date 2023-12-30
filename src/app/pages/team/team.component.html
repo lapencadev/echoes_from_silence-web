@@ -3,77 +3,35 @@
 </div>
 <ng-container *ngIf="!loading">
 <div class="row">
-  <flip-card  [isFlipped]="isFlipped" (click)="toggleFlip();">
-    <flip-card-front>
-      <div class="front diego-front">
-        <img src="./assets/diego.jpg" alt="Diego"> 
-      </div>
 
-    </flip-card-front>
-    <flip-card-back>
-      <p *ngIf="isFlipped">Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego </p>
-      <!-- <div class="boton">
-        <button class="button-bar" (click)="abrirModal();" *ngIf="isFlipped">Diego</button>
-      </div> -->
-      <div class="back diego-back">
-        <img src="./assets/diego.jpg" alt="Diego"> 
-      </div>
-    </flip-card-back>
-
-  </flip-card>
-  <flip-card>
-    <flip-card-front>
-      <div class="carlos-front">
-        <img src="./assets/carlos.jpg" alt="Carlos">
-      </div>
-    </flip-card-front>
-    <flip-card-back class="carlos-back">
+  <!-- <div class="caja"> -->
+        <img class="foto" src="./assets/diego.jpg" alt="Diego"> 
+      <!-- <p>Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego Diego </p> -->
+      <h2>Diego</h2>
+    <!-- </div> -->
+    <!-- <div class="caja"> -->
+        <img class="foto" src="./assets/carlos.jpg" alt="Carlos">
       <h2>Carlos</h2>
-    </flip-card-back>
-  </flip-card>
-  <flip-card>
-    <flip-card-front>
-      <div class="dani-front">
-        <img src="./assets/dani.jpg" alt="Dani">
-      </div>
-    </flip-card-front>
-    <flip-card-back class="dani-back">
+    <!-- </div> -->
+  <!-- <div class="caja"> -->
+          <img class="foto" src="./assets/dani.jpg" alt="Dani">
       <h2>Dani</h2>
-    </flip-card-back>
-  </flip-card>
+    <!-- </div> -->
 </div>
 
 <div class="row">
-  <flip-card>
-    <flip-card-front>
-      <div class="maria-front">
-        <img src="./assets/maria.jpg" alt="María">
-      </div>
-    </flip-card-front>
-    <flip-card-back>
+
+        <img class="foto" src="./assets/maria.jpg" alt="María">
+   
       <h2>María</h2>
-    </flip-card-back>
-  </flip-card>
-  <flip-card>
-    <flip-card-front>
-      <div class="raquel-front">
-        <img src="./assets/raquel.jpg" alt="raquel">
-      </div>
-    </flip-card-front>
-    <flip-card-back class=" back raquel-back">
+   
+        <img class="foto" src="./assets/raquel.jpg" alt="Raquel">
+   
       <h2>Raquel</h2>
-      <!-- <button (click)="abrirModal()">Click</button> -->
-    </flip-card-back>
-  </flip-card>
-  <flip-card>
-    <flip-card-front>
-      <div class="vanesa-front">
-        <img src="./assets/vanesa.jpg" alt="Vanesa">
-      </div>
-    </flip-card-front>
-    <flip-card-back class="vanesa-back">
+     
+        <img class="foto" src="./assets/vanesa.jpg" alt="Vanesa">
+  
       <h2>Vanesa</h2>
-    </flip-card-back>
-  </flip-card>
+   
 </div>
 </ng-container>
