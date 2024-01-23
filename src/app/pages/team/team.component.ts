@@ -9,8 +9,8 @@ import { ModalComponent } from './modal/modal.component';
 })
 export class TeamComponent implements OnInit {
   loading: boolean = true;
-  // isFlipped: boolean = false;
-
+  expandedMember: string | null = null;
+  
   @Input() isFlipped: boolean = false;
 
   toggleFlip() {
@@ -27,10 +27,7 @@ export class TeamComponent implements OnInit {
     }, 2000);  
   }
 
-  // abrirModal() {
-  //   this.dialog
-  //     .open(ModalComponent)
-  //     .afterClosed()
-      
-  // }
+  toggleMember(member: string): void {
+    this.expandedMember = this.expandedMember === member ? null : member;
+  }
 }

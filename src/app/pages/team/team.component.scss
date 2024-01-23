@@ -6,26 +6,25 @@
   }
 
   p {
-    position: absolute;
-    z-index: 1;
     display: flex;
-    justify-content: center;
-    max-width: 80vw;
-    /* ajusta según tus necesidades */
-    margin: auto;
-    /* centra horizontalmente */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotateY(360deg);
+    justify-content: space-around;
+    max-width: 30%;
+    text-align: justify;
 
+  }
+
+  .nombres{
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    justify-content: space-around;
   }
 
   h2 {
-    // display: flex;
-    // justify-content: center;
-    // position: fixed;
-    display: none;
-  }
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer; /* Agrega un cursor indicando que es cliclable */
+}
 
   .foto {
     max-width: 30%;
