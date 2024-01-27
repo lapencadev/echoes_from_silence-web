@@ -8,23 +8,23 @@
   p {
     display: flex;
     justify-content: space-around;
-    max-width: 30%;
     text-align: justify;
-
+    margin: 0px 20px 0px 20px;
   }
 
-  .nombres{
-    margin-left: 40px;
-    margin-right: 40px;
+  .nombres {
     display: flex;
     justify-content: space-around;
   }
 
-  h2 {
-  display: flex;
-  justify-content: space-around;
-  cursor: pointer; /* Agrega un cursor indicando que es cliclable */
-}
+  .boton {
+    display: flex;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    border-width: 0;
+  }
 
   .foto {
     max-width: 30%;
@@ -33,7 +33,7 @@
     flex-direction: column;
   }
 
-  .caja{
+  .caja {
     display: flex;
   }
 
