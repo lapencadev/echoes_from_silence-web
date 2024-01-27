@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ModalComponent } from './modal/modal.component';
-
+import { Textos } from '../../constantes/textos.constants'
 @Component({
   selector: 'app-team',
   templateUrl: './team.component.html',
@@ -10,6 +10,7 @@ import { ModalComponent } from './modal/modal.component';
 export class TeamComponent implements OnInit {
   loading: boolean = true;
   expandedMember: string | null = null;
+  readonly constantes = Textos;
   
   @Input() isFlipped: boolean = false;
 
