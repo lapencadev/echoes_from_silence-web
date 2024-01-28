@@ -9,5 +9,11 @@ import { CommonModule } from '@angular/common';
   styleUrl: './merchandising.component.scss'
 })
 export class MerchandisingComponent {
+  loading: boolean = true;
 
+  ngOnInit(): void {
+    setTimeout(() => {
+      this.loading = false;  
+    }, 2000);  
+  }
 }

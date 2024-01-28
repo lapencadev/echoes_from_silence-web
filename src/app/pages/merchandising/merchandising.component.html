@@ -1,3 +1,17 @@
-<div>
+<div class="titulo">
+    <img class="advertencia" src="./assets/advertencia.png" alt="camisetas echoes from silence">
+    <p>CAMISETAS</p>
+    <img class="advertencia" src="./assets/advertencia.png" alt="camisetas echoes from silence">
+</div>
+<div class="texto">
+    <h4><em> Si quieres colaborar con nuestro proyecto o simplemente quieres una camiseta bien chula, ponte en contacto
+            con nosotros haciendo click <a href="/contacto">aquí</a>.</em></h4>
+</div>
+
+<div *ngIf="loading" class="loading-container">
+    <img src="./assets/rayo.gif" alt="Cargando...">
+</div>
+
+<div *ngIf="!loading" class="imagen">
     <img src="./assets/camisetas.jpg" alt="camisetas echoes from silence">
 </div>

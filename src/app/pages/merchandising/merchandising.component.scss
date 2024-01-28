@@ -1,0 +1,48 @@
+.imagen {
+    display: flex;
+    justify-content: center;
+    filter: saturate(10%);
+}
+
+img {
+    max-width: 50%;
+    border-radius: 10px;
+}
+
+.advertencia {
+    max-height: 40px;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    max-height: fit-content;
+}
+
+p {
+    font-size: 30px;
+    padding: 15px;
+}
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+.loading-container img {
+    width: 200px;
+    height: 200px;
+}
+
+.texto{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    text-align: center;
+}
+
+h4{
+    font-size: 12px;
+}

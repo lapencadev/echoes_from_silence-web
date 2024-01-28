@@ -12,20 +12,29 @@
   <div class="nombres">
     <button class="boton" (click)="toggleMember('María')">
       <h2>{{constantes.MARIA.NOMBRE}}</h2>
-      <span class="material-symbols-outlined" style="line-height: 1.2; margin-left: 5px;">
-        web_traffic
+      <span *ngIf="expandedMember != 'María'" class="material-symbols-outlined" style="line-height: 1.3; margin-left: 5px;">
+        expand_more
+      </span>
+      <span *ngIf="expandedMember === 'María'" class="material-symbols-outlined" style="line-height: 1.3; margin-left: 5px;">
+        expand_less
       </span>
     </button>
     <button class="boton" (click)="toggleMember('Raquel')">
       <h2>{{constantes.RAQUEL.NOMBRE}}</h2>
-      <span class="material-symbols-outlined" style="line-height: 1.2; margin-left: 5px;">
-        web_traffic
+      <span *ngIf="expandedMember != 'Raquel'" class="material-symbols-outlined" style="line-height: 1.3; margin-left: 5px;">
+        expand_more
+      </span>
+      <span *ngIf="expandedMember === 'Raquel'" class="material-symbols-outlined" style="line-height: 1.3; margin-left: 5px;">
+        expand_less
       </span>
     </button>
     <button class="boton" (click)="toggleMember('Vanesa')">
       <h2>{{constantes.VANESA.NOMBRE}}</h2>
-      <span class="material-symbols-outlined" style="line-height: 1.2; margin-left: 5px;">
-        web_traffic
+      <span *ngIf="expandedMember != 'Vanesa'" class="material-symbols-outlined" style="line-height: 1.3; margin-left: 5px;">
+        expand_more
+      </span>
+      <span *ngIf="expandedMember === 'Vanesa'" class="material-symbols-outlined" style="line-height: 1.3; margin-left: 5px;">
+        expand_less
       </span>
     </button>
   </div>
@@ -50,20 +59,29 @@
   <div class="nombres">
     <button class="boton" (click)="toggleMember('Diego')">
       <h2>{{constantes.DIEGO.NOMBRE }}</h2>
-      <span class="material-symbols-outlined" style="line-height: 1.2; margin-left: 5px;">
-        web_traffic
+      <span *ngIf="expandedMember != 'Diego'" class="material-symbols-outlined" style="line-height: 1.3; margin-left: 5px;">
+        expand_more
+      </span>
+      <span *ngIf="expandedMember === 'Diego'" class="material-symbols-outlined" style="line-height: 1.3; margin-left: 5px;">
+        expand_less
       </span>
     </button>
     <button class="boton" (click)="toggleMember('Carlos')">
       <h2>{{constantes.CARLOS.NOMBRE }}</h2>
-      <span class="material-symbols-outlined" style="line-height: 1.2; margin-left: 5px;">
-        web_traffic
+      <span *ngIf="expandedMember != 'Carlos'" class="material-symbols-outlined" style="line-height: 1.3; margin-left: 5px;">
+        expand_more
+      </span>
+      <span *ngIf="expandedMember === 'Carlos'" class="material-symbols-outlined" style="line-height: 1.3; margin-left: 5px;">
+        expand_less
       </span>
     </button>
     <button class="boton" (click)="toggleMember('Dani')">
       <h2>{{constantes.DANI.NOMBRE }}</h2>
-      <span class="material-symbols-outlined" style="line-height: 1.2; margin-left: 5px;">
-        web_traffic
+      <span *ngIf="expandedMember != 'Dani'" class="material-symbols-outlined" style="line-height: 1.3; margin-left: 5px;">
+        expand_more
+      </span>
+      <span *ngIf="expandedMember === 'Dani'" class="material-symbols-outlined" style="line-height: 1.3; margin-left: 5px;">
+        expand_less
       </span>
     </button>  
   </div>
