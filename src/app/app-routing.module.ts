@@ -6,8 +6,13 @@ import { LandingComponent } from './pages/landing/landing.component';
 import { LyricsComponent } from './pages/music/lyrics/lyrics.component';
 import { ConcertsComponent } from './pages/concerts/concerts.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { MerchandisingComponent } from './pages/merchandising/merchandising.component';
 
 const routes: Routes = [
+  {
+    path: 'merchandising',
+    component: MerchandisingComponent
+  },
   {
     path: 'contacto',
     component: ContactComponent
