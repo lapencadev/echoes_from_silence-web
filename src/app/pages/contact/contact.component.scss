@@ -15,23 +15,21 @@
     display: flex;
     justify-content: center; 
     flex-direction: column;
-    max-width: 500px;
-    min-width: 50%;
+    max-width: 100%;
   }
  
-//   .img-container{
-//     display: flex;
-//     justify-content: center;
-//   }
+  .img-container{
+    display: flex;
+    justify-content: center;
+  }
 
-//   .card img {
-//     max-width: 250px;
-//     height: auto;
-//     display: flex;
-//     justify-content: center; 
-//     filter: invert(100%); 
-//     margin: 20px;
-// }
+  .card img {
+    max-width: 500px;
+    height: auto;
+    display: flex;
+    justify-content: center; 
+    margin: 20px;
+}
   
   .card-content {
     padding: 30px;
