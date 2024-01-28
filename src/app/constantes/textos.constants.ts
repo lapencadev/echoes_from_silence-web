@@ -22,6 +22,6 @@ export const Textos = {
     DANI: {
         NOMBRE: 'Dani',
         DESCRIPCION: ' Dani es uno de los guitarristas de la formación. Amante de las seis cuerdas que se dedica, al menos una vez al día, a pasar tiempo con sus “queridas”. Empezó tocando a los doce años con otros dos amigos. Avanzaron y mejoraron musicalmente juntos, cada uno en su propio estilo. Creció tocando con colegas para colegas, haciendo covers con una peculiar versión hilarante de la letra… momentos de diversión en familia. Cuando surgió la idea de una formación seria, ni se lo pensó dos veces… “¡Joder, pues claro que si!”. Anteriormente formó parte de otro proyecto musical, Umbilical A.L.I.V.E. Tiene gustos musicales de todos los colores, pero lo que de verdad le pone eufórico es el thrash metal. Entre sus influencias destacan: Pantera, Audioslave, Megadeth, Annihilator, Gojira, Alice in Chains, Tool, Kreator, Faith No More, Blind Guardian, Anthrax, Rage, BLS...'
-    }
-
+    },
+    EMAIL: 'echoesfromsilence@gmail.com'
 }

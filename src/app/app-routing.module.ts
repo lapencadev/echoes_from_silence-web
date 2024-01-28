@@ -5,39 +5,44 @@ import { MusicComponent } from './pages/music/music.component';
 import { LandingComponent } from './pages/landing/landing.component';
 import { LyricsComponent } from './pages/music/lyrics/lyrics.component';
 import { ConcertsComponent } from './pages/concerts/concerts.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 const routes: Routes = [
   {
-      path: 'conciertos',
-      component: ConcertsComponent
+    path: 'contacto',
+    component: ContactComponent
+  },
+  {
+    path: 'conciertos',
+    component: ConcertsComponent
+  },
+  {
+    path: 'conocenos',
+    component: TeamComponent
+  },
+  {
+    path: 'musica',
+    data: {
+      breadcrumb: {
+        label: 'Nuestra música',
+      },
     },
-    {
-      path: 'conocenos',
-      component: TeamComponent
-    },
-    {
-      path: 'musica',
-        data: {
-          breadcrumb: {
-            label: 'Nuestra música',
-          },
-        },
-        children: [
-          {
-            path: '',
-            component: MusicComponent,
-          },
-          {
-            path: 'letras',
-            component: LyricsComponent,
-          },
-        ],
-    },
+    children: [
+      {
+        path: '',
+        component: MusicComponent,
+      },
+      {
+        path: 'letras',
+        component: LyricsComponent,
+      },
+    ],
+  },
   {
     path: '',
     component: LandingComponent
   },
-  
+
 ];
 
 
