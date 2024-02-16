@@ -1,6 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
-import { ModalComponent } from './modal/modal.component';
 import { Textos } from '../../constantes/textos.constants'
 @Component({
   selector: 'app-team',
@@ -18,7 +16,6 @@ export class TeamComponent implements OnInit {
     this.isFlipped = !this.isFlipped;
   }
   constructor(
-    private dialog: MatDialog
   ){
   }
 
