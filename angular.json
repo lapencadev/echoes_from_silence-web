@@ -15,8 +15,9 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "angular-cli-ghpages:deploy",
           "options": {
+            "baseHref": "https://lapencadev.github.io/echoes_from_silence-web/",
             "outputPath": "dist/echoes_from_silence-web",
             "index": "src/index.html",
             "main": "src/main.ts",
