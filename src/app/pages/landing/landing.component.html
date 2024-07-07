@@ -1,5 +1,5 @@
 <div *ngIf="loading" class="loading-container">
-    <img src="./assets/rayo.gif" alt="Cargando...">
+    <img src="./assets/rayo.gif" loading="lazy" alt="Cargando...">
 </div>
 
 <div id="carouselExampleRide" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
@@ -7,36 +7,36 @@
         <ng-container *ngIf="!loading">
 
             <div class="carousel-item active">
-                <img [src]="'/assets/grupo12.jpg'" class="d-block w-100"
+                <img [src]="'/assets/grupo12.jpg'" class="d-block w-100" loading="lazy"
                     alt="Imagen de un amplificador con el nombre del grupo Echoes from Silence y las zapatillas de la bajista">
             </div>
             <div class="carousel-item">
-                <img [src]="'/assets/grupo3.jpg'" class="d-block w-100"
+                <img [src]="'/assets/grupo3.jpg'" class="d-block w-100" loading="lazy"
                     alt="Imagen de los seis componentes del grupo en unas gradas">
             </div>
             <div class="carousel-item">
-                <img [src]="'/assets/grupo5.jpg'" class="d-block w-100"
+                <img [src]="'/assets/grupo5.jpg'" class="d-block w-100" loading="lazy"
                     alt="Imagen de los sies componentes del grupo en color sepia con perspectiva contrapicado">
             </div>
             <div class="carousel-item">
-                <img [src]="'/assets/grupo8.jpg'" class="d-block w-100"
+                <img [src]="'/assets/grupo8.jpg'" class="d-block w-100" loading="lazy"
                     alt="Raquel con el micrófono y Carlos a la guitarra en colores rojizos">
             </div>
 
             <div class="carousel-item">
-                <img [src]="'/assets/grupo9.jpg'" class="d-block w-100"
+                <img [src]="'/assets/grupo9.jpg'" class="d-block w-100" loading="lazy"
                     alt="Diego a la batería en tonos amarillos y azules">
             </div>
             <div class="carousel-item">
-                <img [src]="'/assets/grupo7.jpg'" class="d-block w-100"
+                <img [src]="'/assets/grupo7.jpg'" class="d-block w-100" loading="lazy"
                     alt="Raquel con el micrófono y Carlos a la guitarra en blanco y negro">
             </div>
             <div class="carousel-item">
-                <img [src]="'/assets/grupo6.jpg'" class="d-block w-100"
+                <img [src]="'/assets/grupo6.jpg'" class="d-block w-100" loading="lazy"
                     alt="Carlos a la guitarra y Vanesa al piano y voz en tonos amarillos y azules">
             </div>
             <div class="carousel-item">
-                <img [src]="'/assets/grupo10.jpg'" class="d-block w-100"
+                <img [src]="'/assets/grupo10.jpg'" class="d-block w-100" loading="lazy"
                     alt="Carlos a la guitarra y voz en blanco y negro">
             </div>
         </ng-container>

@@ -1,10 +1,10 @@
 <!-- <div class="concierto1"> -->
     <div *ngIf="loading" class="loading-container">
-        <img src="./assets/rayo.gif" alt="Cargando...">
+        <img src="./assets/rayo.gif" alt="Cargando..." loading="lazy">
       </div>
       <ng-container *ngIf="!loading">
     <div class="concierto1">
-        <img class="cartel1" [src]="'/assets/cartel1.jpg'" alt="Cartel noche de Metal, Echoes from Silence y Evilact en concierto">
+        <img class="cartel1" loading="lazy" [src]="'/assets/cartel1.jpg'" alt="Cartel noche de Metal, Echoes from Silence y Evilact en concierto">
     </div>
       </ng-container>
     <div class="concierto1">
