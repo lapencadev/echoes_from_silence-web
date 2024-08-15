@@ -4,10 +4,27 @@ footer{
     text-align: center; 
     padding: 20px;
     margin-top: 30px;
+    position: absolute;
+    bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
   }
 
-  .version{
+  .texto{
     color:rgb(179, 189, 189);
     filter: opacity(50%)
+  }
+
+  .loading-container{
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    display: flex;
+  }
+
+  h1{
+    padding: 30px;
   }
   
