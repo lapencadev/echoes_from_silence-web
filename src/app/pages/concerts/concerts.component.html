@@ -1,0 +1,23 @@
+<div *ngIf="loading" class="loading-container">
+    <img src="assets/rayo.gif" alt="Cargando...">
+</div>
+<div class="concierto1">
+    <img class="cartel1" [src]="'assets/cartel2.JPG'" (load)="onImageSettled()" (error)="onImageSettled()"
+        alt="Cartel noche de Metal, Echoes from Silence y Evilact en concierto">
+</div>
+<div class="concierto1">
+    <h2>Viernes 13 de septiembre 2024 - 23.00h</h2>
+</div>
+<div class="concierto1">
+    <img class="cuernos" [src]="'assets/cuernos.png'" (load)="onImageSettled()" (error)="onImageSettled()" alt="cuernos">
+</div>
+<div class="concierto1">
+    <img class="cartel1" [src]="'assets/cartel1.jpg'" (load)="onImageSettled()" (error)="onImageSettled()"
+        alt="Cartel noche de Metal, Echoes from Silence y Evilact en concierto">
+</div>
+<div class="concierto1">
+    <h2>Sábado 2 de diciembre 2023 - 22.00h</h2>
+</div>
+<div class="concierto1">
+    <a href="https://maps.app.goo.gl/2Vt8ACCBDVrJgqN57">Carr. Campo de San Juan, 22, 30440 Moratalla, Murcia</a>
+</div>

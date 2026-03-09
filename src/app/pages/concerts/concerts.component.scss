@@ -1,0 +1,27 @@
+.cartel1 {
+    max-width: 40%;
+    margin-top: 10px;
+}
+
+.concierto1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+.loading-container img {
+    width: 200px;
+    height: 200px;
+}
+
+.cuernos {
+    width: 10%;
+    filter: invert(90%);
+}

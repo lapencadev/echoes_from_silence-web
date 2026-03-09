@@ -1,0 +1,50 @@
+.demo-youtube-player{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+  .bloque-plataformas{
+    h3{
+        margin-left: 5px;
+        padding-bottom: 5px;
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+    margin: 10px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .youtube{
+    margin: 10px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    h1{
+      margin-left: 5px;
+      padding-bottom: 5px;
+      margin-top: 10px;
+      margin-right: 20px;
+    }
+  }
+
+  .plataforma{
+    display: flex;
+  }
+  
+  .boton-letras{
+    display: flex;
+    justify-content: center;
+    h2{
+      margin-left: 5px;
+      padding-bottom: 5px;
+      margin-top: 10px;
+      margin-right: 20px;
+      font-style: italic;
+    }
+  }

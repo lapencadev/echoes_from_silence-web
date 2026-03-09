@@ -1,0 +1,42 @@
+.mat-sidenav-content {
+  font-size: 200%;
+  text-align: center;
+  background-color: #000000;
+  color: white;
+}
+
+.mat-toolbar {
+  color: #ffffff;
+  background-color: black;
+  position: fixed;
+}
+
+.mat-toolbar-row {
+  height: auto;
+}
+
+.mat-drawer {
+  background-color: rgba(70, 131, 180, 0.852);
+  width: inherit;
+}
+
+.menu-spacer {
+  flex: 1 1 auto;
+}
+
+.logo-bar {
+  filter: invert(100%);
+  min-width: 100px;
+  max-width: 140px;
+  margin: 10px;
+}
+
+.seccion-redes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+}
