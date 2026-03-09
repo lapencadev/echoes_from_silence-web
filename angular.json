@@ -27,7 +27,8 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/CNAME"
             ],
             "styles": [
               "@angular/material/prebuilt-themes/pink-bluegrey.css",
@@ -108,7 +109,11 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "branch": "gh-pages",
+            "cname": "www.echoesfromsilence.com"
+          }
         }
       }
     }

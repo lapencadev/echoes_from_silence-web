@@ -5,8 +5,10 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:prod": "ng build --configuration production",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "npm run build:prod && npx angular-cli-ghpages --dir=dist/echoes_from_silence-web --branch=gh-pages --cname=www.echoesfromsilence.com"
   },
   "private": true,
   "dependencies": {
