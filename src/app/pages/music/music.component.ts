@@ -1,10 +1,11 @@
-import {AfterViewInit, ChangeDetectorRef, Component, ElementRef, OnDestroy, OnInit, ViewChild} from '@angular/core';
+import {AfterViewInit, ChangeDetectorRef, Component, ElementRef, OnDestroy, OnInit, ViewChild, ChangeDetectionStrategy} from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-music',
   standalone: false,
   templateUrl: './music.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./music.component.scss']
 })
 export class MusicComponent implements AfterViewInit, OnDestroy {
