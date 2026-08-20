@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -6,6 +6,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './concerts.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './concerts.component.scss'
 })
 export class ConcertsComponent implements OnInit {

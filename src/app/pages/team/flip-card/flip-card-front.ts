@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'flip-card-front',
@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
     <ng-content></ng-content>
   </div>
   `,
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./flip-card.component.scss']
 })
 export class FlipCardFrontComponent { }

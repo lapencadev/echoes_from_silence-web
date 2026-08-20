@@ -1,9 +1,10 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'flip-card',
   standalone: false,
   templateUrl: './flip-card.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./flip-card.component.scss']
 })
 export class FlipCardComponent implements OnInit {
