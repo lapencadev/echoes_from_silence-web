@@ -10,3 +10,29 @@ updates:
         update-types:
           - "minor"
           - "patch"
+    ignore:
+      # Angular majors need `ng update` and its migrations, which Dependabot can't run
+      - dependency-name: "@angular/*"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "@angular-devkit/*"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "ngx-bootstrap"
+        update-types: ["version-update:semver-major"]
+      # Angular pins these to narrow ranges (typescript >=6.0 <6.1, zone.js ~0.15 || ~0.16),
+      # so they move with `ng update`; a bump here would break the whole grouped PR
+      - dependency-name: "typescript"
+        update-types: ["version-update:semver-major", "version-update:semver-minor"]
+      - dependency-name: "zone.js"
+        update-types: ["version-update:semver-major", "version-update:semver-minor"]
+      # karma-jasmine 5 runs on jasmine-core 4, and jasmine-core 7 breaks zone.js's Jasmine patch (#8)
+      - dependency-name: "jasmine-core"
+        update-types: ["version-update:semver-major"]
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    groups:
+      github-actions:
+        patterns:
+          - "*"
